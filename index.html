@@ -12,6 +12,7 @@
             margin: 0;
             font-family: helvetica, arial, sans-serif;
             font-size: 18px;
+            color: #333;
             line-height: 25px;
           }
 
@@ -20,7 +21,8 @@
           }
 
           li,
-          header {
+          header,
+          footer {
             padding-left: 1em;
             padding-right: 1em;
             text-align: center;
@@ -31,6 +33,15 @@
             border-bottom: 1px solid #CCC;
             padding: 2em 0 0;
             margin-bottom: 2em;
+          }
+
+          footer {
+            background-color: #f0f0f0;
+            border-top: 1px solid #CCC;
+            padding: 2em 0 2em;
+            margin-top: 2em;
+            font-size: 12px;
+            line-height: 16px;
           }
 
           ul {
@@ -46,10 +57,12 @@
 
           li:before {
             content: '“';
+            color: #999;
           }
 
           li:after {
             content: '”';
+            color: #999;
           }
         </style>
 
@@ -94,7 +107,17 @@
           What's the simplest thing that could possibly work?
         </li>
       </ul>
-    </div>
+      <footer>
+        <p>
+          <em>Speak git?</em>
+          <p>
+            Add your own Greg quotes here:
+            <a href="https://github.com/trotzig/quotesbygreg">
+              https://github.com/trotzig/quotesbygreg
+            </a>
+          </p>
+        </p>
+      </footer>
     </body>
 </html>
 
